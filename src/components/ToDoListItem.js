@@ -1,9 +1,9 @@
 import React from "react";
 
-function ToDoListItem() {
+function ToDoListItem({ todo }) {
   return (
     <div>
-      <li>To Do Item</li>
+      <li>{todo}</li>
     </div>
   );
 }
