@@ -1,10 +1,22 @@
 import React from "react";
+import "./ToDoListItem.css"
 
-function ToDoListItem({ todo }) {
+function ToDoListItem({ todo, index }) {
   return (
-    <div>
-      <li>{todo}</li>
-    </div>
+
+      <li className="ToDoListItem" 
+      style={{
+        backgroundColor: index % 2 ? "lavender" : "plum"
+      }}
+      >
+        <div className="Number">
+          {index + 1}
+        </div>
+        <div className="Name">
+          {todo}
+        </div>
+      </li>
+
   );
 }
 
