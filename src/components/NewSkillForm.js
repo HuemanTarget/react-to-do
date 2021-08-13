@@ -3,7 +3,7 @@ import React from 'react';
 function NewSkillForm() {
   return(
     <div>
-      <form>
+      <form className="NewSkillForm">
         <label>Skill</label>
         <input type="text" id="skill" name="skill"></input>
         <label for="level">Level</label>

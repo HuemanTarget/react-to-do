@@ -4,16 +4,12 @@ import "./ToDoListItem.css"
 function ToDoListItem({ todo, index }) {
   return (
 
-      <li className="ToDoListItem" 
-      style={{
-        backgroundColor: index % 2 ? "lavender" : "plum"
-      }}
-      >
-        <div className="Number">
-          {index + 1}
-        </div>
+      <li className="ToDoListItem">
         <div className="Name">
-          {todo}
+          {todo.name}
+        </div>
+        <div className="Level">
+          Level {todo.level}
         </div>
       </li>
 
